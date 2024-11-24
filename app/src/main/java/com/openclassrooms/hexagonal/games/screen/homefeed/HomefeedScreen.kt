@@ -1,5 +1,6 @@
 package com.openclassrooms.hexagonal.games.screen.homefeed
 
+import android.graphics.Color.parseColor
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.aspectRatio
@@ -46,6 +47,7 @@ import com.openclassrooms.hexagonal.games.R
 import com.openclassrooms.hexagonal.games.domain.model.Post
 import com.openclassrooms.hexagonal.games.domain.model.User
 import com.openclassrooms.hexagonal.games.ui.theme.HexagonalGamesTheme
+
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -158,7 +160,7 @@ private fun HomefeedCell(
         text = post.title,
         style = MaterialTheme.typography.titleLarge
       )
-      if (post.photoUrl.isNullOrEmpty() == false) {
+      if (!post.photoUrl.isNullOrEmpty()) {
         AsyncImage(
           modifier = Modifier
             .padding(top = 8.dp)
@@ -229,3 +231,6 @@ private fun HomefeedCellImagePreview() {
     )
   }
 }
+
+val String.color
+  get() =  Color(parseColor(this))

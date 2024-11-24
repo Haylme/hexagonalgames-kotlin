@@ -7,6 +7,8 @@ import java.io.Serializable
  * ID, title, description, photo URL, creation timestamp, and the author (User object).
  * The class implements Serializable to allow for potential serialization needs.
  */
+
+
 data class Post(
   /**
    * Unique identifier for the Post.

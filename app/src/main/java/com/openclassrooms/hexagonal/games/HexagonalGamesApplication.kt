@@ -1,7 +1,9 @@
 package com.openclassrooms.hexagonal.games
 
 import android.app.Application
+import com.google.firebase.FirebaseApp
 import dagger.hilt.android.HiltAndroidApp
+
 
 /**
  * The application class for the Hexagonal Games application.
@@ -10,3 +12,13 @@ import dagger.hilt.android.HiltAndroidApp
  */
 @HiltAndroidApp
 class HexagonalGamesApplication : Application()
+/**{
+
+    override fun onCreate() {
+        super.onCreate()
+
+        FirebaseApp.initializeApp(this)
+    }
+
+
+}**/

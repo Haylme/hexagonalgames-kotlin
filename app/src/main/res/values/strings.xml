@@ -12,6 +12,34 @@
   <string name="action_save">Save</string>
   <string name="contentDescription_go_back">Go back</string>
   <string name="contentDescription_more">More</string>
-  <string name="contentDescription_notification_icon">Icone de notification</string>
+  <string name="contentDescription_notification_icon">Notification icon</string>
   <string name="error_title">Title not valid</string>
+  <string name="sign_with_email"> Sign in with email</string>
+  <string name="email">Email</string>
+
+  <string name="sign_in">Sign in</string>
+
+  <string name="next" translatable="false">Next</string>
+  <string name="save">Save</string>
+
+  <string name="empty_mail">Enter your email address to continue</string>
+  <string name="wrong_mail">Incorrect email address</string>
+  <string name="namefield_empty">Please enter a firstname and surname</string>
+
+  <string name="name_and_surname">Firstname and surname</string>
+
+  <string name="weak_password">Password is not strong enough.Use at least 6 characters and a mix of letters and numbers </string>
+  <string name="account_failed">Email account registration unsuccessful</string>
+  <string name="mail_known">Welcome back ! You\'ve already used  %s to sign in.Enter your password for that account.</string>
+
+    <string name="recovery">Trouble signing in ?</string>
+
+  <string name="no_account"> Don\'t have any account yet ?</string>
+
+  <string name="password">Password</string>
+
+  <string name="new_account">New account</string>
+
+  <string name="no_internet">Network error, check your internet connection.</string>
+
 </resources>
